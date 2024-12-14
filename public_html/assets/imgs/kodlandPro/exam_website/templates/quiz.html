@@ -1,0 +1,7 @@
+<form method="POST">
+    {% for question in questions %}
+    <p>{{ question.content }}</p>
+    <input type="text" name="answers">
+    {% endfor %}
+    <button type="submit">Gönder</button>
+</form>
